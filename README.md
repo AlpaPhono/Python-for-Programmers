@@ -31,8 +31,8 @@
     
 ###Slicing Syntaxt
 
-colours = ['red','green','blue','purple','pink','yellow','black'}
-c1 = colours[0] will print 'red'
+colours = ['red','green','blue','purple','pink','yellow','black'} <br />
+c1 = colours[0] will print 'red'<br />
 c2 = colours[1:4] will print from slot 1 to 3  'green', 'blue', 'purple'
 c3 = colours[-1] will print 'black' 
 c4 = colours[:3] will print from 0 to 3  'red','green', 'blue'
@@ -73,7 +73,7 @@ c5 = colours[3:] will print from 3 till the end of the list
   - To get the current location, use file.tell().
   
 ### Conditionals 
-There are 
+several variations of how "if" is used
 
 if name == 'root'
   print ("do not run this utility as root")
