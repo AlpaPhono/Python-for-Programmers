@@ -137,9 +137,9 @@ Two kinds of loops
     statement 
     statement
   
- The variable takes on each element in the sequence and retains the last items value in the sequence.
- To exit early use *break* statement
- To skip the remainder of the iteration and return to the top of the loop use *continue* statement
+   The variable takes on each element in the sequence and retains the last items value in the sequence.
+   To exit early use *break* statement
+   To skip the remainder of the iteration and return to the top of the loop use *continue* statement
   
   ## Enumearate function *enumerate()*
   - returns an enumerate object that provides a virtual list of tuples 
@@ -149,8 +149,43 @@ Two kinds of loops
   - **In** returns True if the specified object is an element of the sequence
   - **Not in** returns True if the specified object is NOT an element of the sequence
   - **+** adds one sequence to another 
-  - ** * ** multiplies a seuence 
+  - *  multiplies a sequence (makes a bigger sequence by repeating the original)
   
+  
+  ## Range() function *range()*
+  - provides a virtual list of numbers
+  - retruns a range object 
+  - good whe you need to execute code a fixed number of times
+  - slice-like parameters
+  
+  Syntax
+  range(stop)
+  range(start,stop)
+  range(start,stop,step)
+  
+  
+# Working with Dates and Times
+  
+  ## Python modules for dates and times 
+  - Standard library 
+    - datetime
+    -time 
+    - calendar
+  - included with Anaconda
+    - dateutil
+    - for pasing dates from text or working with time zones
+  - other
+    - arrow
+    - attempts to consolidate all date/time related functionality into a single, easy-to-use module
+  
+  ## Ways to store dates and times 
+  3 ways dates and times can be stored
+  - (classes) in datetime module 
+    - date
+    - time 
+    - datetime
+  - large ineger (epoch time) no. seconds since december 21 1969
+  - time tuple
   
   
   
