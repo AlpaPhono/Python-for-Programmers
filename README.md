@@ -27,9 +27,17 @@
   - Tuples are immutable sequences of values 
     **my_tuple = 'Mary', 'Poppins', 'London' **
     
+    Tuples are not commonly iterated through but elements are accesed indvidually or unpacked into variables
+    
     Each type has operations specific to them.
+    <u> Common Properties <u>
+  - share syntax for indexing/slicing
+  - share some common methods and functions 
+  - All can be iterated over with FOR loop
+  
     
 ###Slicing Syntaxt
+  [start:stop:step]
 
 colours = ['red','green','blue','purple','pink','yellow','black'} <br />
 c1 = colours[0] will print 'red'<br />
@@ -112,4 +120,37 @@ Two kinds of loops
  
  
 # Working With Arrays
+  
+  ## Lists Versus Tuples
+  - use a list when you have a collection of similar objects
+  - use a tuple for dissimilar objects
+  
+  - Tuple: element position is important
+  - List: element position is not important 
+  
+  - use trailing comma to specify a one element tuple - eg result = 5,
+  - use empty parenthese to specify empty tuple - eg result = ()
 
+  ###Using the **for** loop to iterate through sequences
+  
+  for var in iterable:
+    statement 
+    statement
+  
+ The variable takes on each element in the sequence and retains the last items value in the sequence.
+ To exit early use *break* statement
+ To skip the remainder of the iteration and return to the top of the loop use *continue* statement
+  
+  ## Enumearate function *enumerate()*
+  - returns an enumerate object that provides a virtual list of tuples 
+  
+  can use operaters and keywords for sequences 
+  - **Del** deletes an entire string 
+  - **In** returns True if the specified object is an element of the sequence
+  - **Not in** returns True if the specified object is NOT an element of the sequence
+  - **+** adds one sequence to another 
+  - ** * ** multiplies a seuence 
+  
+  
+  
+  
