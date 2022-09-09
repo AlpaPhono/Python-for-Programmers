@@ -8,12 +8,14 @@
 ###Names 
 - can contain letters digits and underscores
 - cant start with a digit
+
 ###Datatypes
 - Numeric types 
   - bool 
   - int
   -float 
   -complex
+  
   ###Sequence Types
   - Strings are text (arrays of unicode characters
     **s = "text";**
@@ -28,6 +30,7 @@
     Each type has operations specific to them.
     
 ###Slicing Syntaxt
+
 colours = ['red','green','blue','purple','pink','yellow','black'}
 c1 = colours[0] will print 'red'
 c2 = colours[1:4] will print from slot 1 to 3  'green', 'blue', 'purple'
