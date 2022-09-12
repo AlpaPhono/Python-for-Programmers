@@ -5,18 +5,18 @@
 *RECAP*
 
 ## Names, Data types, and Variables in Python
-###Names 
+### Names 
 - can contain letters digits and underscores
 - cant start with a digit
 
-###Datatypes
+### Datatypes
 - Numeric types 
   - bool 
   - int
   -float 
   -complex
   
-  ###Sequence Types
+  ### Sequence Types
   - Strings are text (arrays of unicode characters
     **s = "text";**
   - Bytes are arrays of bytes
@@ -36,7 +36,7 @@
   - All can be iterated over with FOR loop
   
     
-###Slicing Syntaxt
+### Slicing Syntaxt
   [start:stop:step]
 
 colours = ['red','green','blue','purple','pink','yellow','black'} <br />
@@ -46,7 +46,7 @@ c3 = colours[-1] will print 'black'  <br />
 c4 = colours[:3] will print from 0 to 3  'red','green', 'blue'<br />
 c5 = colours[3:] will print from 3 till the end of the list <br />
 
-###Mapping types
+### Mapping types
 - Dictonaries are mapped sets of values (dictionaries have immutable keywords)
 - Sets are similar but only contain keys
   - there are normal sets (dynamic) and forzen sets (immutable)
@@ -131,7 +131,7 @@ Two kinds of loops
   - use trailing comma to specify a one element tuple - eg result = 5,
   - use empty parenthese to specify empty tuple - eg result = ()
 
-  ###Using the **for** loop to iterate through sequences
+  ### Using the **for** loop to iterate through sequences
   
   for var in iterable:
     statement 
@@ -167,15 +167,15 @@ Two kinds of loops
 # Working with Dates and Times
   
   ## Python modules for dates and times 
-  - Standard library 
+  - **Standard library** 
     - datetime
     -time 
     - calendar
-  - included with Anaconda
+  - **included with Anaconda**
     - dateutil
     - for pasing dates from text or working with time zones
   - other
-    - arrow
+    - ** arrow **
     - attempts to consolidate all date/time related functionality into a single, easy-to-use module
   
   ## Ways to store dates and times 
@@ -184,8 +184,64 @@ Two kinds of loops
     - date
     - time 
     - datetime
-  - large ineger (epoch time) no. seconds since december 21 1969
+  - large ineger (epoch time) no. seconds since december 31 1969
   - time tuple
   
   
+ # Parsing Date/Time strings 
+ 
+ *i wont lie, right now the date time sections are just going over my head*
+ 
+# OS Services in Python
+ 
+ - working with OS
+ - Running external programs
+ - Walking through a directory tree
+ - Working with path names 
+ 
+## The OS Module
+Provides OS-specific services.
+
+<u>common methods<u>
+exec...() - executes file, with different configurations of arguments, enviroment, ect
+fchmod() - change permissions of file given by file descriptor
+fork() - Fork a child Process
+ftruncate() - truncate a file to a specified length
+getenv() - get specified environment variable or None/Default (returns string).
+getenvb() - get specified environment variable or None/Default (returns **byte**)
+kill() - kill a process with a signal
+lchown() - Change owner.group of path (don't followsymlinks)
+mkdir() - Create a directory
+open() - Open a file (for low level IO)
+spawn() - Executes a file with arguments from args in subprocess
+unsetenv() - delete environment variable
+wait...() - wait for completion of a child process
+walk() - directory tree generator 
+  - returns a tuple for each directory 
+  - Tuple contains directory path, subdirectories, and files
+  - (absolute path, list of sub directories, list of non directory elements in sub directory)
+write() - write a string to a file descriptor. Paths, directories and file names.
+
+## 
+
+# Working With Binary Data 
+
+- files can be opened in binary mode
+- allows raw and undelimeted reads 
+- read() will return a bytes object - an array of 8 bit integeres
+- .decode function converts bytes object into a string
+- write() to write raw data to a file
+- seek() to position the next read
+- tell() to determine current location within the file.
+
+## Binary vs Text data
+
+- reading HTML source of a web page is retrieved as binary date even though it is "text"
+  - netowrk applications (HTML) encoded as ASCII or UTF-8 (bytes object)
+- decode() method to convert bytes object to string
+- when writing text to network application you are converting from python strong to bytes object.. using encode() method
+
+### Using Struct
+When processing a raw binary file 
+- struct class
   
