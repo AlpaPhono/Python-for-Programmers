@@ -71,9 +71,31 @@ Concatenating multiple values using Python '%s' operator:
 Understanding integers at GeeksforGeeks =  [1, 2, 3]
 ----
 
+# WALK_EX.py
+This code is focused on showing that python is able to create scripts that can edit files and directories within a machines system.
+
+**CODE1**
+imports the OS module allowing the use of its many functions.
+**CODE2**
+Creates a variable called START_DIR which holds a string variable that represents the parent directory in a bash command line.
+**CODE3**
+Creates a function called traversal 
+- the first for loop creates three variables that will be used during the iteration. 
+- os.walk() expects a path to satisfy its parentheses hence the use of *START_DIR* (Pyhton101,2017)
+os.walk() returns a tuple of (directory path,subdirectories, files)
+- The second iteration is used to iterate through all the files in the os.walk(STAR_DIR) tuple
+- the if conditional stating that if the file ends with .py then print its name onto the console
+
+- os.path is a sub-module in the os module that has its own set of "methods".
+       - os.path.join  - the join method expects two arguments in its parentheses (1st path component, 2nd path component)
+       in this example it combines the path of the directory and the path in which the python file has been found
+
+**CODE4**
+The explination for this is long and will be reviewed later.
 
 
 # References 
 - GeeksforGeeks, 2 February 2021, What does %s mean in a Python format string? [Online] visted: 13/09/2022
 link:https://www.geeksforgeeks.org/what-does-s-mean-in-a-python-format-string/#:~:text=%25s%20specifically%20is%20used%20to,conversion%20from%20value%20to%20string.
 
+python101.pythonlibrary, Driscoll. M, 13.9.2017, Chapter 16 - The os Module [Online] visited: 13/09/2022, link:https://python101.pythonlibrary.org/chapter16_os.html
