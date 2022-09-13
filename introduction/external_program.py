@@ -1,4 +1,12 @@
 #! /usr/bin/python3
+
+#The Purpose of this exercise is to show that it is possible to use python code to execute an external program on your machine.
+#The code presented here is intended to run an application known as netstat
+#The prerequisits are that netsat is already installed and can run on your machine prior to running this code.
+#To install netstat use sudo apt-get install net-tools
+#test that it works by netering netstat into you bash cli
+#IF all is well running this code should run netstat an external program
+
 import sys
 sys.version_info[0]
 
