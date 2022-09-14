@@ -7,12 +7,13 @@ Can be used to find and replace subsets of a piece of text.<br/>
 
 ## Example 1
 
->pattern = r'ab'
->text = 'bac acb'
+>pattern = r'ab' <br/>
+>text = 'bac acb'<br/>
 >
->matches = re.findall(pattern, text)
+>matches = re.findall(pattern, text)<br/>
+>
+>print(f"#EXAMPLE 1:\n\nPattern: {pattern}\nText: {text}\nMatches: {matches}\n")<br/>
 
-print(f"#EXAMPLE 1:\n\nPattern: {pattern}\nText: {text}\nMatches: {matches}\n")
 - line 1 imports the regular expressions module
 - Two variables (line 5 and 6) are declaired called pattern and text
     - r'ab'  The r with text within a single quote signifies a raw string. Everything within the quotes will be taken as a literial string.
