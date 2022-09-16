@@ -3,6 +3,11 @@
 ## Introduction
 Using **Anchors** to match the beginning or end of a string
 learning about capture groups
+- + matches the LH charcter 1 or many times 
+- ? matches the LH character {0,1} (0 or 1)times 
+- \d can be any digit once 
+- . matches any charcter buy only once
+- * matches the LHS charcter 0 or many times 
 
 ## Example 1
 >pattern = r'sta+r'<br/>
@@ -122,3 +127,63 @@ This example uses the repetition quantifier to match the word in the text that c
 - if pattern8 = r'a\d+?b' it will match every character in text8.
 - **I dont understand why** 
     - Ill come back to this later.
+
+# Using Anchors
+
+## Example 9
+
+>pattern9 = r'one.'<br/>
+>text9 = 'one1 one2 one3'<br/>
+>
+>matches9 = re.findall(pattern9, text9)<br/>
+>
+>print(f"EXAMPLE9:\n\n Pattern9: {pattern9}\n Text9: {text9}\n Matches9: {matches9}\n")<br/>
+
+- This example shows how the period quantifer takes on the form of different characters to match each word in the string.
+> Matches9: ['one1', 'one2', 'one3']
+
+- To match just the first word pattern9 = r'\Aone.'
+- ** A\ ** sequence is called an **anchor**, this one matches the beginning of a string
+<br/>
+- To match the last word pattern9 = r'one.\Z
+- ** \Z ** is the opposite to A\. It matches the pattern at the end of a string.
+
+## Example 10
+
+>pattern10 = r'^one.'<br/>
+>text10 = 'one1 one2 one3\none4 one5 one6'<br/>
+>
+>matches10 = re.findall(pattern10, text10, re.MULTILINE)<br/>
+>
+>print(f"EXAMPLE10:\n\n Pattern10: {pattern10}\n Text10: {text10}\n Matches10: {matches10}\n")<br/>
+
+- This example uses the caret anchor in the pattern10 string
+    - ^ Matches the expression to its RHS one or many times. Every instance before a \n
+- The string in text10 has a new line seperating the first three patterns of characters from the other three
+- matches10 uses a flag as its thrid arguemtent. This flag changes the behaviour of the finall method
+    - re.MULTILINE treats the text10 input as a multiline input<br/>
+(learnbyexample,2020)
+<br/>
+> Matches10: ['one1', 'one4']
+
+
+## Example 11
+
+>pattern11 = r'.*://.*'
+>text11 = 'http://example.com'
+>
+>matches11 = re.findall(pattern11, text11)
+>
+>print(f"EXAMPLE11:\n\n Pattern11: {pattern11}\n Text11: {text11}\n Matches11: {matches11}\n")
+
+- This example will match the entire string inputted 
+<br/>
+> Matches11: ['http://example.com']
+
+- To match the domain name and protocol seperately change pattern11 to r'(.*)://(.*)'<br/>
+- you will have two matches 
+
+
+# Referencecs 
+
+Learnbyexample, 03/07/2020, Pyhton regular expression cheatsheet and examples, [online], visited: 16/09/2020, link: https://learnbyexample.github.io/python-rejex-cheatsheet/

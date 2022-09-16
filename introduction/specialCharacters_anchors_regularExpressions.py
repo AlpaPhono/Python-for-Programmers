@@ -81,6 +81,38 @@ matches8 = re.findall(pattern8, text8)
 
 print(f"EXAMPLE8:\n\n Pattern8: {pattern8}\n Text8: {text8}\n Matches8: {matches8}\n")
 
+#########################
 
+# Example 9
+
+pattern9 = r'one.'
+text9 = 'one1 one2 one3'
+
+matches9 = re.findall(pattern9, text9)
+
+print(f"EXAMPLE9:\n\n Pattern9: {pattern9}\n Text9: {text9}\n Matches9: {matches9}\n")
+
+####################
+
+# Example 10
+
+pattern10 = r'^one.'
+text10 = 'one1 one2 one3\none4 one5 one6'
+
+matches10 = re.findall(pattern10, text10, re.MULTILINE)
+
+print(f"EXAMPLE10:\n\n Pattern10: {pattern10}\n Text10: {text10}\n Matches10: {matches10}\n")
+
+###########
+
+
+# Example 11
+
+pattern11 = r'.*://.*'
+text11 = 'http://example.com'
+
+matches11 = re.findall(pattern11, text11)
+
+print(f"EXAMPLE11:\n\n Pattern11: {pattern11}\n Text11: {text11}\n Matches11: {matches11}\n")
 
 
