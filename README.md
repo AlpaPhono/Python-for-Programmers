@@ -203,24 +203,24 @@ Two kinds of loops
 Provides OS-specific services.
 
 <u>common methods<u>
-exec...() - executes file, with different configurations of arguments, enviroment, ect
-fchmod() - change permissions of file given by file descriptor
-fork() - Fork a child Process
-ftruncate() - truncate a file to a specified length
-getenv() - get specified environment variable or None/Default (returns string).
-getenvb() - get specified environment variable or None/Default (returns **byte**)
-kill() - kill a process with a signal
-lchown() - Change owner.group of path (don't followsymlinks)
-mkdir() - Create a directory
-open() - Open a file (for low level IO)
-spawn() - Executes a file with arguments from args in subprocess
-unsetenv() - delete environment variable
-wait...() - wait for completion of a child process
-walk() - directory tree generator 
+- exec...() - executes file, with different configurations of - arguments, enviroment, ect
+- fchmod() - change permissions of file given by file descriptor
+- fork() - Fork a child Process
+- ftruncate() - truncate a file to a specified length
+- getenv() - get specified environment variable or None/Default (returns string).
+- getenvb() - get specified environment variable or None/Default (returns **byte**)
+- kill() - kill a process with a signal
+- lchown() - Change owner.group of path (don't followsymlinks)
+- mkdir() - Create a directory
+- open() - Open a file (for low level IO)
+- spawn() - Executes a file with arguments from args in subprocess
+- unsetenv() - delete environment variable
+- wait...() - wait for completion of a child process
+- walk() - directory tree generator 
   - returns a tuple for each directory 
   - Tuple contains directory path, subdirectories, and files
   - (absolute path, list of sub directories, list of non directory elements in sub directory)
-write() - write a string to a file descriptor. Paths, directories and file names.
+- write() - write a string to a file descriptor. Paths, directories and file names.
 
 ## 
 

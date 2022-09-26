@@ -6,8 +6,9 @@ learning about capture groups
 - + matches the LH charcter 1 or many times 
 - ? matches the LH character {0,1} (0 or 1)times 
 - \d can be any digit once 
-- . matches any charcter buy only once
+- . matches any charcter but only once
 - * matches the LHS charcter 0 or many times 
+<br> ()
 
 ## Example 1
 >pattern = r'sta+r'<br/>
@@ -186,4 +187,4 @@ This example uses the repetition quantifier to match the word in the text that c
 
 # Referencecs 
 
-Learnbyexample, 03/07/2020, Pyhton regular expression cheatsheet and examples, [online], visited: 16/09/2020, link: https://learnbyexample.github.io/python-rejex-cheatsheet/
+Learnbyexample, 03/07/2020, Pyhton regular expression cheatsheet and examples, [online], visited: 16/09/2020, link: https://learnbyexample.github.io/python-regex-cheatsheet/
