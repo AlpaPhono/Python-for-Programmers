@@ -30,13 +30,13 @@ print(hello)<br/>
 [arguement breakdown]
 
 ## Examples 
-![function 1](Python-for-Programmers\image_resource\fun1.png)
+![function 1](~\image_resource\fun1.png)
 example of basic function with no arguments<br/>
-![function 2](Python-for-Programmers\image_resource\fun2.png)
+![function 2](~\image_resource\fun2.png)
 <br/>
-![function 3](Python-for-Programmers\image_resource\fun3.png)
+![function 3](~\image_resource\fun3.png)
 example of function with default required arguement<br/>
-![function 4](Python-for-Programmers\image_resource\fun4.png)
+![function 4](~\image_resource\fun4.png)
 example of function with required and optional arguements<br/>
-![function 5](Python-for-Programmers\image_resource\fun5.png)
+![function 5](~\image_resource\fun5.png)
 example of a function with only keyword only parameters<br/>
