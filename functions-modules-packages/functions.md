@@ -42,7 +42,7 @@ example of function with required and optional arguements<br/>
 example of a function with keyword only parameters<br/>
 It can be called with no parameters as it doesnt have any required parameters in its function definition.<br/>
 
-**function 6**
+**function 6**<br/>
 def fun_6(**named_args):<br/>
     print("fun_six():")<br/>
     for named in named_args:<br/>
