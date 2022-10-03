@@ -4,9 +4,9 @@
 > Can return one object of any type, using the return statement. If there is no return statement the function returns "None"
 
 ## Example
-def say_hello():
-    print('hello, world')
-    print()
+def say_hello():<br/>
+    print('hello, world')<br/>
+    print()<br/>
 ...<br/>
 ...<br/>
 hello = say_hello()<br/>
@@ -15,8 +15,8 @@ hello, world<br/>
 >This variable is of the type **None** because the function has no return statement.
 
 ## Example 
-def get_hello():
-    return 'Hello, world'
+def get_hello():<br/>
+    return 'Hello, world'<br/>
 ...<br/>
 ...<br/>
 hello = get_hello()<br/>
@@ -43,10 +43,10 @@ example of a function with keyword only parameters<br/>
 It can be called with no parameters as it doesnt have any required parameters in its function definition.<br/>
 
 **function 6**
-def fun_6(**named_args):
-    print("fun_six():")
-    for named in named_args:
-        print(name, "==> ", named_args[name])
+def fun_6(**named_args):<br/>
+    print("fun_six():")<br/>
+    for named in named_args:<br/>
+        print(name, "==> ", named_args[name])<br/>
 ...<br/>
 ...<br/>
 fun_six(name="lancelot", quest="grail", colour="red")
