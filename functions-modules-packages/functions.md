@@ -34,9 +34,34 @@ print(hello)<br/>
 example of basic function with no arguments<br/>
 ![function 2](~\image_resource\fun2.png)
 <br/>
-![function 3](~\image_resource\fun3.png)
+![function 3](https://github.com/AlpaPhono/Python-for-Programmers/blob/main/image_resource/fun3.png)
 example of function with default required arguement<br/>
-![function 4](~\image_resource\fun4.png)
+![function 4](https://github.com/AlpaPhono/Python-for-Programmers/blob/main/image_resource/fun4.png)
 example of function with required and optional arguements<br/>
-![function 5](~\image_resource\fun5.png)
-example of a function with only keyword only parameters<br/>
+![function 5](https://github.com/AlpaPhono/Python-for-Programmers/blob/main/image_resource/fun5.png)
+example of a function with keyword only parameters<br/>
+It can be called with no parameters as it doesnt have any required parameters in its function definition.<br/>
+
+**function 6**
+def fun_6(**named_args):
+    print("fun_six():")
+    for named in named_args:
+        print(name, "==> ", named_args[name])
+...<br/>
+...<br/>
+fun_six(name="lancelot", quest="grail", colour="red")
+fun_six():
+name ==> lancelot
+quest ==> grail
+colour ==> red
+
+Example uses keyword named parameters<br/>
+This function is also capable of returning a dictionary of all the named arguements<br/>
+def fun_6(**named_args):
+    print(named_args)
+    print(type(named_args))
+...<br/>
+...<br/>
+fun_six(name="lancelot", quest="grail", colour="red")<br/>
+{'name':'lancelot', 'quest':'grail', 'colour','red'}<br/>
+<class 'dict'> <br/>
