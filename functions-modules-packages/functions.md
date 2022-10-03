@@ -30,7 +30,7 @@ print(hello)<br/>
 [arguement breakdown]
 
 ## Examples 
-![function 1](~\image_resource\fun1.png)
+![function 1](https://github.com/AlpaPhono/Python-for-Programmers/blob/main/image_resource/fun1.png)
 example of basic function with no arguments<br/>
 ![function 2](~\image_resource\fun2.png)
 <br/>
