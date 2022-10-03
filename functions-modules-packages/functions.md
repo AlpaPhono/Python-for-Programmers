@@ -27,7 +27,7 @@ print(hello)<br/>
 # Function Parameters 
 - can be required or optional
 - can be postional or named
-[arguement breakdown]
+![arguement breakdown](https://github.com/AlpaPhono/Python-for-Programmers/blob/main/image_resource/breakdown.png)
 
 ## Examples 
 ![function 1](https://github.com/AlpaPhono/Python-for-Programmers/blob/main/image_resource/fun1.png)
