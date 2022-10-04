@@ -27,6 +27,14 @@ print(hello)<br/>
 # Function Parameters 
 - can be required or optional
 - can be postional or named
+    - A positional argument can just have a value entered when the function is called
+    - A named argument needs to have the argument assigned to a value when the function is called.
+    - Positional: def spam(greeting):<br/>
+                        print(greeting)<br/>
+                spam(hello)
+    - Named: def spam(*,greeting):
+                    print(greeting)<br/>
+                spam(greeting=hello)
 ![arguement breakdown](https://github.com/AlpaPhono/Python-for-Programmers/blob/main/image_resource/breakdown.png)
 
 ## Examples 
@@ -65,3 +73,22 @@ def fun_6(**named_args):
 fun_six(name="lancelot", quest="grail", colour="red")<br/>
 {'name':'lancelot', 'quest':'grail', 'colour','red'}<br/>
 <class 'dict'> <br/>
+
+# Default Parameters 
+Required parameters can have defaults, assigned with equals sign<br/>
+Parameters without defaults cannot be specified after parameters with defaults<br/>
+
+## Examples
+![positional and named functions](https://github.com/AlpaPhono/Python-for-Programmers/blob/main/image_resource/posnamedfun.png)
+
+# Name resolution (AKA SCOPE)
+A scope is an area within a python program where an unqualified name can be looked up.<br/>
+There are four nested scopes that are searched for names in the following order<br/>
+- Local: local names bound within a function
+- Nonlocal: local names plus local names of outer function(s)
+- Global: the current module's global names
+- Builtin: built-in functions (contents of _builtins_module)
+
+## Example
+
+![Scope Example](https://github.com/AlpaPhono/Python-for-Programmers/blob/main/image_resource/scope.png)
