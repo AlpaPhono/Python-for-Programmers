@@ -6,7 +6,7 @@ Useful for filtering, reporting and validating textual data.<br/>
 Can be used to find and replace subsets of a piece of text.<br/>
 
 ## Example 1
->import re
+>import re <br/>
 >pattern = r'ab' <br/>
 >text = 'bac acb'<br/>
 >
