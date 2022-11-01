@@ -94,7 +94,7 @@ To match strings you will have to use a feature of regular expressions called **
 - Matches the preceding regular expression (lefthand) one or more times.
 
 ## Example 7
->pattern7 = r'\w+'
+>pattern7 = r'\w+' <br/>
 >text7 = 'FirstWord 1 LastWord'<br/>
 >
 >matches7 = re.findall(pattern7, text7)<br/>
